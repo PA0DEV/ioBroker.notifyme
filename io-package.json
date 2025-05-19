@@ -1,0 +1,85 @@
+{
+	"common": {
+		"name": "notifyme",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"uk": "Початкова версія",
+				"zh-cn": "首次出版"
+			}
+		},
+		"titleLang": {
+			"en": "Notify Me",
+			"de": "Benachrichtige mich",
+			"ru": "Уведомить меня",
+			"pt": "Me notifique",
+			"nl": "Stel me op de hoogte",
+			"fr": "Informez-moi",
+			"it": "Avvisami",
+			"es": "Notificarme",
+			"pl": "Powiadom mnie",
+			"uk": "Повідомте мене",
+			"zh-cn": "通知我"
+		},
+		"desc": {
+			"en": "Sends Notifications on State Values, Min- or Max Limits",
+			"de": "Sendet Benachrichtigungen über staatliche Werte, Min- oder Maximiten",
+			"ru": "Отправляет уведомления о значениях состояний, ограничениях MIN- или MAX",
+			"pt": "Envia notificações sobre valores do estado, limites min- ou max",
+			"nl": "Stuurt meldingen over statuswaarden, min- of max limieten",
+			"fr": "Envoie des notifications sur les valeurs d'état, les limites min ou max",
+			"it": "Invia notifiche sui valori statali, limiti minimi o massimi",
+			"es": "Envía notificaciones sobre los valores de estado, los límites mínimos o máximos",
+			"pl": "Wysyła powiadomienia o wartościach stanu, minimalnych lub maksymalnych limitach",
+			"uk": "Надсилає сповіщення про значення стану, мінімальні обмеження",
+			"zh-cn": "发送有关状态值，最小或最大限制的通知"
+		},
+		"authors": ["PA0DEV <info@pa0dev.de>"],
+		"keywords": ["Alarming", "Notification", "Messages"],
+		"licenseInformation": {
+			"type": "free",
+			"license": "MIT"
+		},
+		"platform": "Javascript/Node.js",
+		"icon": "notifyme.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/PA0DEV/ioBroker.notifyme/main/admin/notifyme.png",
+		"readme": "https://github.com/PA0DEV/ioBroker.notifyme/blob/main/README.md",
+		"loglevel": "info",
+		"tier": 3,
+		"mode": "daemon",
+		"type": "messaging",
+		"compact": true,
+		"connectionType": "local",
+		"dataSource": "push",
+		"adminUI": {
+			"config": "json"
+		},
+		"supportCustoms": true,
+		"dependencies": [
+			{
+				"js-controller": ">=6.0.11"
+			}
+		],
+		"globalDependencies": [
+			{
+				"admin": "7.0.23"
+			}
+		]
+	},
+	"native": {
+		"option1": true,
+		"option2": "42"
+	},
+	"objects": [],
+	"instanceObjects": []
+}
