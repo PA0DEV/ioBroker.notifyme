@@ -98,12 +98,12 @@ class Notifyme extends utils.Adapter {
   //  * Using this method requires "common.messagebox" property to be set to true in io-package.json
   //  */
   // private onMessage(obj: ioBroker.Message): void {
-  // 	if (typeof obj === 'object' && obj.message) {
-  // 		if (obj.command === 'send') {
+  // 	if (typeof obj === "object" && obj.message) {
+  // 		if (obj.command === "send") {
   // 			// e.g. send email or pushover or whatever
-  // 			this.log.info('send command');
+  // 			this.log.info("send command");
   // 			// Send response in callback if required
-  // 			if (obj.callback) this.sendTo(obj.from, obj.command, 'Message received', obj.callback);
+  // 			if (obj.callback) this.sendTo(obj.from, obj.command, "Message received", obj.callback);
   // 		}
   // 	}
   // }

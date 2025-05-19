@@ -12,7 +12,7 @@
 
 ## notifyme adapter for ioBroker
 
-Sends Notifications on State Values, Min- or Max Limits
+Sends alerts based on state changes, threshold violations, or custom triggers using messaging services like CallMeBot. Future support for additional notification channels is planned.
 
 ## Developer manual
 This section is intended for the developer. It can be deleted later.

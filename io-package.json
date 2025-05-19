@@ -18,7 +18,7 @@
 			}
 		},
 		"titleLang": {
-			"en": "Notify Me",
+			"en": "Notify ME",
 			"de": "Benachrichtige mich",
 			"ru": "Уведомить меня",
 			"pt": "Me notifique",
@@ -31,20 +31,40 @@
 			"zh-cn": "通知我"
 		},
 		"desc": {
-			"en": "Sends Notifications on State Values, Min- or Max Limits",
-			"de": "Sendet Benachrichtigungen über staatliche Werte, Min- oder Maximiten",
-			"ru": "Отправляет уведомления о значениях состояний, ограничениях MIN- или MAX",
-			"pt": "Envia notificações sobre valores do estado, limites min- ou max",
-			"nl": "Stuurt meldingen over statuswaarden, min- of max limieten",
-			"fr": "Envoie des notifications sur les valeurs d'état, les limites min ou max",
-			"it": "Invia notifiche sui valori statali, limiti minimi o massimi",
-			"es": "Envía notificaciones sobre los valores de estado, los límites mínimos o máximos",
-			"pl": "Wysyła powiadomienia o wartościach stanu, minimalnych lub maksymalnych limitach",
-			"uk": "Надсилає сповіщення про значення стану, мінімальні обмеження",
-			"zh-cn": "发送有关状态值，最小或最大限制的通知"
+			"en": "Sends alerts based on state changes, threshold violations, or custom triggers using messaging services like CallMeBot. Future support for additional notification channels is planned.",
+			"de": "Sendet Warnungen auf der Grundlage staatlicher Änderungen, Schwellenwertverletzungen oder benutzerdefinierten Auslöser unter Verwendung von Messaging -Diensten wie Callmebot. Zukünftige Unterstützung für zusätzliche Benachrichtigungskanäle ist geplant.",
+			"ru": "Отправляет оповещения на основе изменений состояния, пороговых нарушений или пользовательских триггеров, используя такие службы обмена сообщениями, как Callmebot. Будущая поддержка дополнительных каналов уведомления запланирована.",
+			"pt": "Envie alertas com base em alterações do estado, violações de limite ou gatilhos personalizados usando serviços de mensagens como CallMebot. O suporte futuro para canais de notificação adicional está planejado.",
+			"nl": "Verzendt waarschuwingen op basis van statuswijzigingen, drempelovertredingen of aangepaste triggers met berichtenservices zoals Callmebot. Toekomstige ondersteuning voor extra meldingskanalen is gepland.",
+			"fr": "Envoie des alertes en fonction des modifications d'état, des violations de seuil ou des déclencheurs personnalisés à l'aide de services de messagerie comme CallMebot. Un soutien futur pour les canaux de notification supplémentaires est prévu.",
+			"it": "Invia avvisi in base alle modifiche statali, alle violazioni della soglia o ai trigger personalizzati utilizzando servizi di messaggistica come CallMebot. È previsto un supporto futuro per ulteriori canali di notifica.",
+			"es": "Envía alertas basadas en cambios estatales, violaciones de umbral o desencadenantes personalizados utilizando servicios de mensajería como CallMebot. Se planifica el soporte futuro para canales de notificación adicionales.",
+			"pl": "Wysyła powiadomienia na podstawie zmian stanu, naruszeń progowych lub niestandardowych wyzwalaczy za pomocą usług przesyłania wiadomości, takich jak CallMebot. Planowane jest przyszłe wsparcie dla dodatkowych kanałów powiadomień.",
+			"uk": "Надсилає сповіщення на основі змін держав, порогових порушень або спеціальних тригерів, використовуючи послуги обміну повідомленнями, такі як CallMebot. Планується майбутня підтримка додаткових каналів сповіщень.",
+			"zh-cn": "根据状态更改，违反阈值或使用Callmebot之类的消息服务发送警报。计划对其他通知渠道的未来支持。"
 		},
 		"authors": ["PA0DEV <info@pa0dev.de>"],
-		"keywords": ["Alarming", "Notification", "Messages"],
+		"keywords": [
+			"notification",
+			"alert",
+			"messaging",
+			"threshold",
+			"trigger",
+			"state-change",
+			"iot",
+			"callmebot",
+			"alarm",
+			"monitoring",
+			"automation",
+			"push-message",
+			"limits",
+			"notifier",
+			"smart-home",
+			"event-based",
+			"custom-alerts",
+			"adapter",
+			"reminder"
+		],
 		"licenseInformation": {
 			"type": "free",
 			"license": "MIT"
