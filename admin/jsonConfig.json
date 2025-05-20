@@ -4,12 +4,17 @@
 	"items": {
 		"option1": {
 			"type": "checkbox",
-			"label": "option1",
+			"label": "Enable Whatsapp Alarms",
 			"newLine": true
 		},
 		"option2": {
 			"type": "text",
-			"label": "option2",
+			"label": "Target phone number",
+			"newLine": true
+		},
+		"option3": {
+			"type": "text",
+			"label": "CallMeBot API Key",
 			"newLine": true
 		}
 	}

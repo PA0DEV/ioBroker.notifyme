@@ -38,6 +38,19 @@ class Notifyme extends utils.Adapter {
   async onReady() {
     this.log.info("config option1: " + this.config.option1);
     this.log.info("config option2: " + this.config.option2);
+    await this.setObjectNotExistsAsync("testVariable", {
+      type: "state",
+      common: {
+        name: "testVariable",
+        type: "boolean",
+        role: "indicator",
+        read: true,
+        write: true
+      },
+      native: {}
+    });
+    this.subscribeStates("testVariable");
+    await this.setStateAsync("testVariable", true);
   }
   /**
    * Is called when adapter shuts down - callback has to be called under any circumstances!
@@ -94,4 +107,4 @@ if (require.main !== module) {
 } else {
   (() => new Notifyme())();
 }
-//# sourceMappingURL=main.js.map
+//# sourceMappingURL=main%20copy.js.map
