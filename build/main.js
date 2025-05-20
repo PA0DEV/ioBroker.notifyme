@@ -21,7 +21,7 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
   isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
   mod
 ));
-var utils = __toESM(require("@iobroker/adapter-core"));
+var utils = __toESM(require("@iobroker/adapter-core"), 1);
 class Notifyme extends utils.Adapter {
   constructor(options = {}) {
     super({
@@ -45,7 +45,7 @@ class Notifyme extends utils.Adapter {
   onUnload(callback) {
     try {
       callback();
-    } catch (e) {
+    } catch {
       callback();
     }
   }
@@ -66,6 +66,7 @@ class Notifyme extends utils.Adapter {
   /**
    * Is called if a subscribed state changes
    */
+  // eslint-disable-next-line no-undef
   onStateChange(id, state) {
     if (state) {
       this.log.info(`state ${id} changed: ${state.val} (ack = ${state.ack})`);

@@ -4,7 +4,7 @@
 
 // The adapter-core module gives you access to the core ioBroker functions
 // you need to create an adapter
-import * as utils from '@iobroker/adapter-core';
+import * as utils from "@iobroker/adapter-core";
 
 // Load your modules here, e.g.:
 // import * as fs from 'fs';
@@ -13,13 +13,13 @@ class Notifyme extends utils.Adapter {
 	public constructor(options: Partial<utils.AdapterOptions> = {}) {
 		super({
 			...options,
-			name: 'notifyme',
+			name: "notifyme",
 		});
-		this.on('ready', this.onReady.bind(this));
-		this.on('stateChange', this.onStateChange.bind(this));
+		this.on("ready", this.onReady.bind(this));
+		this.on("stateChange", this.onStateChange.bind(this));
 		// this.on('objectChange', this.onObjectChange.bind(this));
 		// this.on('message', this.onMessage.bind(this));
-		this.on('unload', this.onUnload.bind(this));
+		this.on("unload", this.onUnload.bind(this));
 	}
 
 	/**
@@ -30,8 +30,8 @@ class Notifyme extends utils.Adapter {
 
 		// The adapters config (in the instance object everything under the attribute 'native') is accessible via
 		// this.config:
-		this.log.info('config option1: ' + this.config.option1);
-		this.log.info('config option2: ' + this.config.option2);
+		this.log.info("config option1: " + this.config.option1);
+		this.log.info("config option2: " + this.config.option2);
 	}
 
 	/**
@@ -42,7 +42,8 @@ class Notifyme extends utils.Adapter {
 			// Here you must clear all timeouts or intervals that may still be active
 
 			callback();
-		} catch (e) {
+		} catch {
+			// Otherwise the adapter will be stuck in "stop" state
 			callback();
 		}
 	}
@@ -65,6 +66,7 @@ class Notifyme extends utils.Adapter {
 	/**
 	 * Is called if a subscribed state changes
 	 */
+	// eslint-disable-next-line no-undef
 	private onStateChange(id: string, state: ioBroker.State | null | undefined): void {
 		if (state) {
 			// The state was changed

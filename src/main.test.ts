@@ -5,10 +5,11 @@
  * It is advised to test all your modules with accompanying *.test.ts-files
  */
 
-import { expect } from 'chai';
+import { expect } from "chai";
+import { describe, it } from "mocha";
 // import { functionToTest } from './moduleToTest';
 
-describe('module to test => function to test', () => {
+describe("module to test => function to test", () => {
 	// initializing logic
 	const expected = 5;
 
