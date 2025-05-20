@@ -1,7 +1,6 @@
 {
   "name": "iobroker.notifyme",
   "version": "0.0.1",
-  "type": "module",
   "description": "Sends alerts based on state changes, threshold violations, or custom triggers using messaging services like CallMeBot. Future support for additional notification channels is planned.",
   "author": {
     "name": "PA0DEV",
